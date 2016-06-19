@@ -36,8 +36,6 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -59,7 +57,7 @@ body {
  */
 .logo{
   width: 150px;
-  margin-top: 40px; 
+  margin-top: 30px; 
 }
 
 .smlogo{
@@ -96,9 +94,10 @@ body {
   width: 80px;
 }
 .btnText{
-  margin-top: -25px;
+  margin-top: -15px;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 150;
+  background: transparent;
 }
 .mycover{
   object-fit: cover;
@@ -111,6 +110,9 @@ body {
 .username{
   font-size: 1.5em;
   margin-top: 10px;
+}
+.insert{
+  background-color: rgba(255,255,255,0.7);
 }
 .Qborder{
   border: 2px dashed white;
@@ -140,6 +142,48 @@ body {
   border: 1px solid #fff;
   background-color:rgba(0,0,0,0);
   border-radius: 50%;
+}
+.subtitle2{
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.money{
+  font-size: 1.8em;
+}
+.money2{
+  font-size: 2.5em;
+}
+.max{
+  font-size:1em; 
+  font-weight: 100;
+  margin:15px 0 0 0;
+  color: rgba(255,255,255,0.8);
+  text-align: left;
+  border-color: rgba(0,0,0,0);
+}
+.numberP p{
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+.btnConfirm{
+  margin-top:10%; 
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255,255,255,0);
+  background-color:rgba(126,211,33,0.8);
+  border-radius: 50%;
+}
+.logofin{
+  width: 180px;
+  margin-top: 100px; 
+  margin-bottom: 30px;
+}
+.thanks{
+  font-size: 1.5em;
+  margin-bottom: 90px;
 }
 /*
  * Footer
