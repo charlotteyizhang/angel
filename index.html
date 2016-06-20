@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="css/main.css">
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!--face api-->
   <script type="text/javascript" src="js/facepp-sdk.min.js"></script>
@@ -36,18 +33,34 @@
             <p class="nomalNum"><strong class="numS">1</strong><small>/ 6</small></p>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
 
-            <form id="username_form" >
+            <form id="username_form">
               <div class="form-group">
                 <label class="subtitle" for="username">User Name</label>
                 <input type="text" class="form-control insert" id="username" name="username" placeholder="Please type your user name" required="required">
               </div>
-              <span id="text"></span>
               <div class="row">
-                <button class="btn btnText" onclick = "queryDatabase($('#username_form').serializeArray())"><img class="scan" src="img/facial scanning.png"></button>
+                <a class="btn btnText" id="usernameBtn"><img class="scan" src="img/eye.png"></a>
                 <p class="btnText">Face Checking</p>
               </div>
             </form>
 
+            <!-- <form id="facecheckin_form" action="upload.php" method="post" enctype="multipart/form-data"> -->
+            <form class="hidden" id="facecheckin_form" action="javascript:;" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                Select click to verify the account holder:
+
+              <!--   <div class="image-upload" style="height: 80px; margin: 20px;">
+                  <label for="fileToUpload">
+                      <img src="img/facial scanning.png" width="80px"/>
+                  </label>
+
+                  <input id="fileToUpload" name="fileToUpload"  type="file" accept="image/*"/>
+              </div> -->
+
+                <input type="file" accept="image/*" name="fileToUpload" id="fileToUpload">
+                <input class="btn" type="submit" value="Verify" name="submit">
+            </form>
+            <div id='loading' class="hidden">Verifying...</div>
+            <span id="warntext"></span>
           </div>
           <div class="mastfoot fix">
             <div class="inner">

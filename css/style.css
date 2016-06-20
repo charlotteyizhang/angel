@@ -185,6 +185,26 @@ body {
   font-size: 1.5em;
   margin-bottom: 90px;
 }
+.btnT{
+  width: 50px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 auto;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
 /*
  * Footer
  */
